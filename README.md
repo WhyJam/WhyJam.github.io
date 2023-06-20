@@ -1,43 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Law Firm Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    
-    body {
-      background-color: #f5f5f5; /* Replace with your desired background color */
-    }  
-    
-    /* Reset some default styles */
-    body, h1, h2, h3, h4, h5, h6, p, ul, li {
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Global styles */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2; /* Replace with your desired background color */
-    }
-      
-    @media screen and (min-height: 100vh) {
-      body {
-      margin-bottom: 60px;}
-      }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 40px;
-    }
-
-    h1, h2, h3 {
-      color: #333;
-    }
-
-    p {
-      color: #5A5A5A;
-    }
+    /* Rest of the styles */
 
     /* Header styles */
     .header {
@@ -48,8 +15,8 @@
       margin-top: 120px;
       width: 100%;
       box-sizing: border-box;
-        position: relative;
-        margin-top: 120px;
+      position: relative;
+      z-index: 1;
     }
 
     .header h1 {
@@ -73,7 +40,7 @@
       justify-content: center;
       align-items: center;
       padding: 20px;
-      z-index: 1;
+      z-index: 2;
     }
 
     nav ul {
@@ -97,8 +64,9 @@
 
     /* Main content styles */
     .main-content {
-      margin-top: 0px;
-        padding-top: 60px;
+      margin-top: 0;
+      padding-top: 60px;
+      z-index: 0;
     }
 
     .main-content h2 {
@@ -118,15 +86,17 @@
       text-align: center;
       color: #fff;
       width: 100%;
-      position: relative;
+      position: fixed;
       bottom: 0;
       box-sizing: border-box;
+      z-index: 1;
     }
-      
+
     /* Some other stuff */
     h1 {
       color: #fff;
     }
+
     section {
       margin-bottom: 50px; /* Add margin at the bottom of each section */
     }
@@ -150,7 +120,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <h1>WhyJam? 0.2.3</h1>
+      <h1>WhyJam? 0.2.4</h1>
       <p>Slogan</p>
     </div>
   </header>
