@@ -234,12 +234,14 @@
   <footer>
     <div class="container">
       <p>&copy; 2023 WhyJam? All rights reserved.</p>
+      <br>
       <div class="social-icons">
-        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.reddit.com"><i class="fab fa-reddit"></i></a>
+        <a href="https://youtube.com/@WhY_JaM"><i class="fab fa-youtube"></i></a>
+        <a href="https://twitter.com/WhyJam_KKSt?t=8Q-CvyWfuRxqwYEjH0VCBw&s=09"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100090499354036"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@WhY.JaM"><i class="fab fa-tiktok"></i></a>
+        <a href="https://instagram.com/why_jam_?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.reddit.com/u/WhY_JaM?utm_medium=android_app&utm_source=share"><i class="fab fa-reddit"></i></a>
       </div>
     </div>
   </footer>
