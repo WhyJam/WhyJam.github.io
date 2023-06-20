@@ -3,29 +3,21 @@
 <head>
   <title>Law Firm Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <style>
-    
     body {
-      background-color: #f5f5f5; /* Replace with your desired background color */
-    }  
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+    }
     
     /* Reset some default styles */
-    body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    h1, h2, h3, h4, h5, h6, p, ul, li {
       margin: 0;
       padding: 0;
     }
 
     /* Global styles */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2; /* Replace with your desired background color */
-    }
-      
-    @media screen and (min-height: 100vh) {
-      body {
-      margin-bottom: 60px;}
-      }
-
     .container {
       max-width: 960px;
       margin: 0 auto;
@@ -38,20 +30,17 @@
 
     p {
       color: #5A5A5A;
+      line-height: 1.5;
     }
 
     /* Header styles */
     .header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      margin-top: 120px;
-      width: 100%;
-      box-sizing: border-box;
-        position: relative;
-        margin-top: 120px;
-    }
+    background-color: #333;
+    color: #fff; /* Updated color */
+    padding: 40px;
+    text-align: center;
+    margin-top: 80px; 
+  }
 
     .header h1 {
       font-size: 32px;
@@ -70,10 +59,6 @@
       width: 100%;
       background-color: #777;
       transition: transform 0.3s ease-in-out;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
       z-index: 1;
     }
 
@@ -89,7 +74,7 @@
       font-size: 18px;
       color: #fff;
       text-decoration: none;
-      padding: 10px;
+      padding: 20px;
     }
 
     nav ul li a:hover {
@@ -98,17 +83,11 @@
 
     /* Main content styles */
     .main-content {
-      margin-top: 0px;
-        padding-top: 60px;
+      padding-top: 80px;
     }
 
     .main-content h2 {
       font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .main-content p {
-      line-height: 1.5;
       margin-bottom: 20px;
     }
 
@@ -118,41 +97,46 @@
       padding: 20px;
       text-align: center;
       color: #fff;
-      width: 100%;
-      position: relative;
-      bottom: 0;
       box-sizing: border-box;
     }
-      
+
+    footer p {
+      color: #fff; 
+      margin: 0;
+    }
+
     /* Some other stuff */
-    h1 {
-      color: #fff;
-    }
     section {
-      margin-bottom: 50px; /* Add margin at the bottom of each section */
+      margin-bottom: 50px; 
     }
+      h1{
+          color: white;
+      }
+      p1{
+          color: white;
+      }
   </style>
-  
+
   <script>
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
-        document.querySelector("nav").style.transform = "translateY(0)"; // Show the navigation bar when scrolling up
+        document.querySelector("nav").style.transform = "translateY(0)"; 
       } else {
-        document.querySelector("nav").style.transform = "translateY(-100%)"; // Hide the navigation bar when scrolling down
+        document.querySelector("nav").style.transform = "translateY(-100%)"; 
       }
       prevScrollpos = currentScrollPos;
     }
   </script>
-  
+
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <h1>WhyJam?</h1>
-      <p>Slogan</p>
+      <p1>Slogan</p1>
     </div>
   </header>
 
@@ -163,7 +147,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#lawyers">Our Lawyers</a></li> <!-- Add Our Lawyers section to the nav bar -->
+        <li><a href="#lawyers">Our Lawyers</a></li> 
       </ul>
     </div>
   </nav>
@@ -189,7 +173,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium condimentum risus vitae aliquam. Suspendisse vulputate tincidunt sem, ut aliquam tortor interdum a. Sed et magna velit.</p>
     </section>
 
-    <section id="lawyers"> <!-- Placeholder for Our Lawyers section -->
+    <section id="lawyers"> 
       <h2>Our Lawyers</h2>
       <div class="lawyers-container">
         <div class="lawyer">
