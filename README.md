@@ -1,8 +1,7 @@
-
 <html>
 <head>
   <title>Law Firm Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add viewport meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     
     body {
@@ -48,6 +47,9 @@
       text-align: center;
       margin-top: 120px;
       width: 100%;
+      box-sizing: border-box;
+        position: relative;
+        margin-top: 120px;
     }
 
     .header h1 {
@@ -95,7 +97,8 @@
 
     /* Main content styles */
     .main-content {
-      margin-top: 80px;
+      margin-top: 0px;
+        padding-top: 60px;
     }
 
     .main-content h2 {
@@ -115,9 +118,9 @@
       text-align: center;
       color: #fff;
       width: 100%;
-      position: fixed;
+      position: relative;
       bottom: 0;
-    position: relative;
+      box-sizing: border-box;
     }
       
     /* Some other stuff */
@@ -147,7 +150,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <h1>WhyJam? Version 0.2.2</h1>
+      <h1>WhyJam? 0.2.3</h1>
       <p>Slogan</p>
     </div>
   </header>
