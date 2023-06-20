@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Law Firm Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add viewport meta tag -->
   <style>
     
     body {
@@ -19,6 +20,11 @@
       font-family: Arial, sans-serif;
       background-color: #f2f2f2; /* Replace with your desired background color */
     }
+      
+    @media screen and (min-height: 100vh) {
+      body {
+      margin-bottom: 60px;}
+      }
 
     .container {
       max-width: 960px;
@@ -109,8 +115,11 @@
       text-align: center;
       color: #fff;
       width: 100%;
+      position: fixed;
+      bottom: 0;
+    position: relative;
     }
-
+      
     /* Some other stuff */
     h1 {
       color: #fff;
@@ -121,24 +130,19 @@
   </style>
   
   <script>
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.querySelector("nav").style.transform = "translateY(0)"; // Show the navigation bar when scrolling up
-    } else {
-      document.querySelector("nav").style.transform = "translateY(-100%)"; // Hide the navigation bar when scrolling down
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector("nav").style.transform = "translateY(0)"; // Show the navigation bar when scrolling up
+      } else {
+        document.querySelector("nav").style.transform = "translateY(-100%)"; // Hide the navigation bar when scrolling down
+      }
+      prevScrollpos = currentScrollPos;
     }
-    prevScrollpos = currentScrollPos;
-  }
-</script>
+  </script>
   
 </head>
-
-
-
-
-
 
 <body>
   <header class="header">
@@ -154,8 +158,8 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#lawyers">Our Lawyers</a></li> <!-- Added "Our Lawyers" section to the navigation -->
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#lawyers">Our Lawyers</a></li> <!-- Add Our Lawyers section to the nav bar -->
       </ul>
     </div>
   </nav>
@@ -176,40 +180,35 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium condimentum risus vitae aliquam. Suspendisse vulputate tincidunt sem, ut aliquam tortor interdum a. Sed et magna velit.</p>
     </section>
 
-    <section id="lawyers">
-      <h2>Our Lawyers</h2>
-      <div class="lawyers-container">
-        <div class="lawyer">
-          <img src="lawyer1.jpg" alt="Lawyer 1">
-          <h3>Lawyer 1</h3>
-          <p>Description of Lawyer 1</p>
-        </div>
-        <div class="lawyer">
-          <img src="lawyer2.jpg" alt="Lawyer 2">
-          <h3>Lawyer 2</h3>
-          <p>Description of Lawyer 2</p>
-        </div>
-        <div class="lawyer">
-          <img src="lawyer3.jpg" alt="Lawyer 3">
-          <h3>Lawyer 3</h3>
-          <p>Description of Lawyer 3</p>
-        </div>
-        <div class="lawyer">
-          <img src="lawyer4.jpg" alt="Lawyer 4">
-          <h3>Lawyer 4</h3>
-          <p>Description of Lawyer 4</p>
-        </div>
-        <div class="lawyer">
-          <img src="lawyer5.jpg" alt="Lawyer 5">
-          <h3>Lawyer 5</h3>
-          <p>Description of Lawyer 5</p>
-        </div>
-      </div>
-    </section>
-
     <section id="contact">
       <h2>Contact Us</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium condimentum risus vitae aliquam. Suspendisse vulputate tincidunt sem, ut aliquam tortor interdum a. Sed et magna velit.</p>
+    </section>
+
+    <section id="lawyers"> <!-- Placeholder for Our Lawyers section -->
+      <h2>Our Lawyers</h2>
+      <div class="lawyers-container">
+        <div class="lawyer">
+          <img src="placeholder1.jpg" alt="Lawyer 1">
+          <p>Description of Lawyer 1</p>
+        </div>
+        <div class="lawyer">
+          <img src="placeholder2.jpg" alt="Lawyer 2">
+          <p>Description of Lawyer 2</p>
+        </div>
+        <div class="lawyer">
+          <img src="placeholder3.jpg" alt="Lawyer 3">
+          <p>Description of Lawyer 3</p>
+        </div>
+        <div class="lawyer">
+          <img src="placeholder4.jpg" alt="Lawyer 4">
+          <p>Description of Lawyer 4</p>
+        </div>
+        <div class="lawyer">
+          <img src="placeholder5.jpg" alt="Lawyer 5">
+          <p>Description of Lawyer 5</p>
+        </div>
+      </div>
     </section>
   </div>
 
@@ -219,6 +218,4 @@
     </div>
   </footer>
 </body>
-
-
 </html>
