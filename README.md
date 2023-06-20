@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>Law Firm Website</title>
@@ -41,6 +41,7 @@
       padding: 20px;
       text-align: center;
       margin-top: 120px;
+      width: 100%;
     }
 
     .header h1 {
@@ -104,10 +105,10 @@
     /* Footer styles */
     footer {
       background-color: #333;
-      width: 100%;
       padding: 20px;
       text-align: center;
       color: #fff;
+      width: 100%;
     }
 
     /* Some other stuff */
