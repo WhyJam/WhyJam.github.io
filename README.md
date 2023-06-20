@@ -52,34 +52,35 @@
       
     /* Navigation styles */
     nav {
-      background-color: #555;
-      padding: 10px 0;
       position: fixed;
-      top: 0;
-      width: 100%;
-      transition: transform 0.3s ease-in-out;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #777777;
         z-index: 1;
+        transition: transform 0.3s ease-in-out;
     }
       
       
     nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
+      display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        margin: 0;
     }
 
     nav ul li {
-      display: inline-block;
-      margin-right: 20px;
+      list-style: none;
+        margin: 0;
     }
 
     nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      padding: 5px 10px;
-    }
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+  }
 
     nav ul li a:hover {
       background-color: #777;
