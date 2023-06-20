@@ -4,6 +4,7 @@
   <title>Law Firm Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
       font-family: 'Roboto', Arial, sans-serif;
@@ -20,7 +21,7 @@
     /* Global styles */
     .container {
       max-width: 960px;
-      width:auto;
+      width: auto;
       margin: 0 auto;
       padding: 40px;
     }
@@ -123,16 +124,29 @@
       margin: 0;
     }
 
+    /* Social media icons */
+    .social-icons {
+      font-size: 24px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
     /* Some other stuff */
     section {
       margin-bottom: 50px; 
     }
-      h1{
-          color: white;
-      }
-      p1{
-          color: white;
-      }
+    
+    h1 {
+      color: white;
+    }
+    
+    p1 {
+      color: white;
+    }
   </style>
 
   <script>
@@ -147,11 +161,9 @@
       prevScrollpos = currentScrollPos;
     }
   </script>
-
 </head>
 
 <body>
-
   <nav>
     <div class="container">
       <ul>
@@ -222,6 +234,13 @@
   <footer>
     <div class="container">
       <p>&copy; 2023 WhyJam? All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.reddit.com"><i class="fab fa-reddit"></i></a>
+      </div>
     </div>
   </footer>
 </body>
