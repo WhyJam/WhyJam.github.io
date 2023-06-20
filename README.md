@@ -4,6 +4,7 @@
   <title>Law Firm Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    
     body {
       background-color: #f5f5f5; /* Replace with your desired background color */
     }  
@@ -22,15 +23,13 @@
       
     @media screen and (min-height: 100vh) {
       body {
-        margin-bottom: 60px;
+      margin-bottom: 60px;}
       }
-    }
 
     .container {
       max-width: 960px;
       margin: 0 auto;
       padding: 40px;
-      margin-left: 20px; /* Add left margin */
     }
 
     h1, h2, h3 {
@@ -50,8 +49,8 @@
       margin-top: 120px;
       width: 100%;
       box-sizing: border-box;
-      position: relative;
-      margin-top: 120px;
+        position: relative;
+        margin-top: 120px;
     }
 
     .header h1 {
@@ -84,12 +83,6 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      width: 100%;
-    }
-
-    nav ul li {
-      flex-grow: 1;
-      text-align: center;
     }
 
     nav ul li a {
@@ -97,13 +90,16 @@
       color: #fff;
       text-decoration: none;
       padding: 10px;
-      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
     }
 
     /* Main content styles */
     .main-content {
       margin-top: 0px;
-      padding-top: 60px;
+        padding-top: 60px;
     }
 
     .main-content h2 {
@@ -127,17 +123,16 @@
       bottom: 0;
       box-sizing: border-box;
     }
-
+      
     /* Some other stuff */
     h1 {
       color: #fff;
     }
-
     section {
       margin-bottom: 50px; /* Add margin at the bottom of each section */
     }
   </style>
-
+  
   <script>
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
@@ -150,7 +145,7 @@
       prevScrollpos = currentScrollPos;
     }
   </script>
-
+  
 </head>
 
 <body>
@@ -163,12 +158,12 @@
 
   <nav>
     <div class="container">
-      <ul class="nav-menu">
-        <li style="flex-grow: 1; text-align: center;"><a href="#home">Home</a></li>
-        <li style="flex-grow: 1; text-align: center;"><a href="#about">About</a></li>
-        <li style="flex-grow: 1; text-align: center;"><a href="#services">Services</a></li>
-        <li style="flex-grow: 1; text-align: center;"><a href="#contact">Contact</a></li>
-        <li style="flex-grow: 1; text-align: center;"><a href="#lawyers">Our Lawyers</a></li>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#lawyers">Our Lawyers</a></li> <!-- Add Our Lawyers section to the nav bar -->
       </ul>
     </div>
   </nav>
@@ -217,19 +212,14 @@
           <img src="placeholder5.jpg" alt="Lawyer 5">
           <p>Description of Lawyer 5</p>
         </div>
-        <div class="lawyer">
-          <img src="placeholder6.jpg" alt="Lawyer 6">
-          <p>Description of Lawyer 6</p>
-        </div>
       </div>
     </section>
   </div>
 
   <footer>
     <div class="container">
-      <p>&copy; 2023 Your Law Firm. All rights reserved.</p>
+      <p>&copy; 2023 WhyJam? All rights reserved.</p>
     </div>
   </footer>
-
 </body>
 </html>
