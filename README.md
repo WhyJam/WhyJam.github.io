@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>Law Firm Website</title>
@@ -12,6 +12,7 @@
     /* Global styles */
     body {
       font-family: Arial, sans-serif;
+      background-color: #f2f2f2; /* Replace with your desired background color */
     }
 
     .container {
@@ -29,24 +30,13 @@
     }
 
     /* Header styles */
-    
-    .top-section {
-        background-color: #111111;
-        color: #ffffff;
-        padding: 20px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 2;
-      }
     .header {
-        background-color: #333333;
-        color: #ffffff;
-        padding: 20px 40px;
-        margin-top: 120px;
-        text-align: center;
-      }
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 120px;
+    }
 
     .header h1 {
       font-size: 32px;
@@ -56,56 +46,40 @@
     .header p {
       font-size: 16px;
     }
-      
-    section{
-    margin-bottom: 40px;
-    }
-      
+
     /* Navigation styles */
     nav {
       position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #777777;
-        z-index: 1;
-        transition: transform 0.3s ease-in-out;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #777;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      z-index: 1;
     }
-      
-      
+
     nav ul {
       display: flex;
-        justify-content: space-between;
-        padding: 0 40px;
-        margin: 0;
-    }
-
-    nav ul li {
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
       list-style: none;
-        margin: 0;
     }
 
     nav ul li a {
-    display: block;
-    padding: 20px;
-    font-size: 18px;
-    color: #ffffff;
-    text-decoration: none;
-  }
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
 
     nav ul li a:hover {
-      background-color: #777;
+      background-color: #555;
     }
-    
-    nav ul {
-    display: flex; 
-    justify-content: space-between; 
-    padding: 0 20px; 
-    margin: 0 40px; 
-      }
-    nav ul li a {
-    font-size: 22px; 
-      }
 
     /* Main content styles */
     .main-content {
@@ -124,46 +98,44 @@
 
     /* Footer styles */
     footer {
-    background-color: #333333;
-    color: #ffffff;
-    padding: 20px;
-    margin: 0;
-    text-align: center;
-  }
+      background-color: #333;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
 
-    footer p {
-      font-size: 14px;
-    }
-      
-    .bottom-section {
-        background-color: #111111;
-        color: #ffffff;
-        padding: 20px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 2;
-      }
-      
     /* Some other stuff */
-    
     h1 {
-        color: white;  
-    }
-    p1 {
-          color: white;
-    }
-    body {
-    background-color: #f2f2f2; /* Replace with your desired background color */
+      color: #fff;
     }
   </style>
+  
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector("nav").style.transform = "translateY(0)"; // Show the navigation bar when scrolling up
+    } else {
+      document.querySelector("nav").style.transform = "translateY(-100%)"; // Hide the navigation bar when scrolling down
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  navBar.style.transition = "transform 0.3s ease-in-out";
+</script>
+  
 </head>
+
+
+
+
+
 <body>
   <header class="header">
     <div class="container">
       <h1>WhyJam?</h1>
-      <p1>Slogan</p1>
+      <p>Slogan</p>
     </div>
   </header>
 
@@ -181,7 +153,7 @@
   <div class="container main-content">
     <section id="home">
       <h2>Welcome to Your Law Firm</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium condimentum risus vitae aliquam. Suspendisse vulputate trem ipsum dolor sit tae aliquam. Suspendisse vulputate trem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium condimentum risus vitae aliquam. Suspendisse vulputate trem ipsum dolor sit aipsum dolor sit amet, codimentum risuiquam. Suspendisse vulputate trem ipsa</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium condimentum risus vitae aliquam. Suspendisse vulputate tincidunt sem, ut aliquam tortor interdum a. Sed et magna velit.</p>
     </section>
 
     <section id="about">
@@ -202,21 +174,8 @@
 
   <footer>
     <div class="container">
-      <p1>&copy; 2023 WhyJam? All rights reserved.</p1>
+      <p>&copy; 2023 WhyJam? All rights reserved.</p>
     </div>
   </footer>
-
-  <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.querySelector("nav").style.transform = "translateY(0)"; // Show the navigation bar when scrolling up
-      } else {
-        document.querySelector("nav").style.transform = "translateY(-100%)"; // Hide the navigation bar when scrolling down
-      }
-      prevScrollpos = currentScrollPos;
-    }
-  </script>
 </body>
 </html>
