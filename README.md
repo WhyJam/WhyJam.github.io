@@ -135,6 +135,11 @@
   
 </head>
 
+
+
+
+
+
 <body>
   <header class="header">
     <div class="container">
@@ -149,6 +154,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#lawyers">Our Lawyers</a></li> <!-- Added "Our Lawyers" section to the navigation -->
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -170,6 +176,37 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium condimentum risus vitae aliquam. Suspendisse vulputate tincidunt sem, ut aliquam tortor interdum a. Sed et magna velit.</p>
     </section>
 
+    <section id="lawyers">
+      <h2>Our Lawyers</h2>
+      <div class="lawyers-container">
+        <div class="lawyer">
+          <img src="lawyer1.jpg" alt="Lawyer 1">
+          <h3>Lawyer 1</h3>
+          <p>Description of Lawyer 1</p>
+        </div>
+        <div class="lawyer">
+          <img src="lawyer2.jpg" alt="Lawyer 2">
+          <h3>Lawyer 2</h3>
+          <p>Description of Lawyer 2</p>
+        </div>
+        <div class="lawyer">
+          <img src="lawyer3.jpg" alt="Lawyer 3">
+          <h3>Lawyer 3</h3>
+          <p>Description of Lawyer 3</p>
+        </div>
+        <div class="lawyer">
+          <img src="lawyer4.jpg" alt="Lawyer 4">
+          <h3>Lawyer 4</h3>
+          <p>Description of Lawyer 4</p>
+        </div>
+        <div class="lawyer">
+          <img src="lawyer5.jpg" alt="Lawyer 5">
+          <h3>Lawyer 5</h3>
+          <p>Description of Lawyer 5</p>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <h2>Contact Us</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium condimentum risus vitae aliquam. Suspendisse vulputate tincidunt sem, ut aliquam tortor interdum a. Sed et magna velit.</p>
@@ -182,4 +219,6 @@
     </div>
   </footer>
 </body>
+
+
 </html>
