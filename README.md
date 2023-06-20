@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>Law Firm Website</title>
@@ -115,8 +115,8 @@
       color: #fff;
     }
     section {
-  margin-bottom: 50px; /* Add margin at the bottom of each section */
-}
+      margin-bottom: 50px; /* Add margin at the bottom of each section */
+    }
   </style>
   
   <script>
@@ -130,14 +130,9 @@
     }
     prevScrollpos = currentScrollPos;
   }
-  navBar.style.transition = "transform 0.3s ease-in-out";
 </script>
   
 </head>
-
-
-
-
 
 <body>
   <header class="header">
