@@ -20,6 +20,7 @@
     /* Global styles */
     .container {
       max-width: 960px;
+      width:auto;
       margin: 0 auto;
       padding: 40px;
     }
@@ -133,12 +134,6 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>WhyJam?</h1>
-      <p1>Slogan</p1>
-    </div>
-  </header>
 
   <nav>
     <div class="container">
@@ -152,6 +147,13 @@
     </div>
   </nav>
 
+  <header class="header">
+    <div class="container">
+      <h1>WhyJam?</h1>
+      <p1>Slogan</p1>
+    </div>
+  </header>
+  
   <div class="container main-content">
     <section id="home">
       <h2>Welcome to Your Law Firm</h2>
