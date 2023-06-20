@@ -1,8 +1,13 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>Law Firm Website</title>
   <style>
+    
+    body {
+      background-color: #f5f5f5; /* Replace with your desired background color */
+    }  
+    
     /* Reset some default styles */
     body, h1, h2, h3, h4, h5, h6, p, ul, li {
       margin: 0;
@@ -109,6 +114,9 @@
     h1 {
       color: #fff;
     }
+    section {
+  margin-bottom: 50px; /* Add margin at the bottom of each section */
+}
   </style>
   
   <script>
