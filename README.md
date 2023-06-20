@@ -8,16 +8,17 @@
 
     /* Header styles */
     .header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      margin-top: 120px;
-      width: 100%;
-      box-sizing: border-box;
-      position: relative;
-      z-index: 1;
-    }
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+        margin-top: 60px;
+}
 
     .header h1 {
       font-size: 32px;
@@ -120,7 +121,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <h1>WhyJam? 0.2.4</h1>
+      <h1>WhyJam? 0.2.5</h1>
       <p>Slogan</p>
     </div>
   </header>
