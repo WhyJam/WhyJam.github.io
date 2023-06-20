@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title>Law Firm Website</title>
@@ -130,7 +129,7 @@
           color: white;
     }
     body {
-    background-color: #f2f2f2; /* Replace with your desired background color */
+    background-color: #f2f2f2; 
     }
   </style>
 </head>
