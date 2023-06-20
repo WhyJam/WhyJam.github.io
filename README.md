@@ -147,7 +147,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <h1>WhyJam?</h1>
+      <h1>WhyJam? Version 0.2.2</h1>
       <p>Slogan</p>
     </div>
   </header>
