@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -140,8 +140,27 @@ section h2 {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 5px;
+}
+
+.social-icons a i {
+  font-size: 18px;
 }
 
 /* Media Queries for Responsive Design */
@@ -162,6 +181,22 @@ footer {
 
   nav ul li {
     margin: 10px;
+  }
+
+  nav.active ul {
+    display: block;
+  }
+
+  nav ul li a {
+    display: block;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  #menu-toggle.active {
+    background-color: #333;
   }
 
   section {
