@@ -1,204 +1,90 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-  font-family: 'Arial', sans-serif;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhyJam Law Firm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-.container {
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
+<body>
+  <header id="header">
+    <div class="container">
+      <h1>WhyJam Law Firm</h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  transition: top 0.5s;
-}
+  <section id="hero">
+    <div class="container">
+      <h1>Welcome to WhyJam Law Firm</h1>
+      <p>Providing legal solutions tailored to your needs</p>
+    </div>
+  </section>
 
-header.hidden {
-  top: -100px;
-}
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nunc eget mauris efficitur tempus.</p>
+      <ul>
+        <li>Service 1</li>
+        <li>Service 2</li>
+        <li>Service 3</li>
+      </ul>
+    </div>
+  </section>
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-}
+  <section id="value-proposition">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nunc eget mauris efficitur tempus.</p>
+    </div>
+  </section>
 
-nav ul li {
-  margin-left: 20px;
-}
+  <section id="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nunc eget mauris efficitur
+          tempus."</blockquote>
+        <cite>- John Doe</cite>
+      </div>
+    </div>
+  </section>
 
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
+  <section id="contact">
+  <div class="container">
+    <h2>Contact and Inquiry</h2>
+    <div class="contact-text">
+      <p>We would love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
 
-section {
-  margin-top: 80px;
-}
 
-section h2 {
-  margin-bottom: 10px;
-}
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 WhyJam Law Firm. All rights reserved.</p>
+    </div>
+  </footer>
 
-#hero {
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 60px 0;
-}
+  <script src="script.js"></script>
+</body>
 
-#hero h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-#hero p {
-  font-size: 20px;
-  color: #666;
-}
-
-#services ul {
-  list-style: none;
-}
-
-#services ul li {
-  margin-bottom: 10px;
-}
-
-#value-proposition {
-  text-align: center;
-  padding: 60px 0;
-}
-
-#value-proposition h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-#value-proposition p {
-  font-size: 18px;
-  color: #666;
-}
-
-#testimonials .testimonial {
-  background-color: #f9f9f9;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-#testimonials blockquote {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-#testimonials cite {
-  font-size: 14px;
-  color: #888;
-}
-
-#contact {
-  margin-bottom: 40px;
-}
-
-.contact-text {
-  margin-bottom: 20px;
-}
-
-#contact .contact-form input,
-#contact .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-#contact .contact-form button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#contact .contact-form button:hover {
-  background-color: #555;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Media Queries for Responsive Design */
-
-@media screen and (max-width: 767px) {
-  header {
-    padding: 5px;
-  }
-
-  header h1 {
-    font-size: 24px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  nav ul li {
-    margin: 10px;
-  }
-
-  section {
-    margin-top: 60px;
-  }
-
-  #hero {
-    padding: 40px 0;
-  }
-
-  #hero h1 {
-    font-size: 30px;
-  }
-
-  #hero p {
-    font-size: 18px;
-  }
-
-  #value-proposition h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-
-  #value-proposition p {
-    font-size: 16px;
-  }
-
-  #testimonials blockquote {
-    font-size: 16px;
-  }
-
-  #testimonials cite {
-    font-size: 12px;
-  }
-
-  #contact .contact-form input,
-  #contact .contact-form textarea {
-    font-size: 14px;
-  }
-}
+</html>
