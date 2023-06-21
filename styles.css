@@ -50,6 +50,10 @@ section {
   margin-top: 80px;
 }
 
+section h2 {
+  margin-bottom: 10px;
+}
+
 #hero {
   background-color: #f2f2f2;
   text-align: center;
@@ -106,6 +110,13 @@ section {
   color: #888;
 }
 
+#contact {
+  margin-bottom: 40px; /* Add margin-bottom for spacing */
+}
+
+.contact-text {
+  margin-bottom: 10px; 
+}
 #contact .contact-form input,
 #contact .contact-form textarea {
   width: 100%;
