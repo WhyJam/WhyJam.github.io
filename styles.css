@@ -1,237 +1,219 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  transition: top 0.5s;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: top 0.5s;
 }
 
 header.hidden {
-  top: -100px;
+    top: -100px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
 }
 
 section {
-  margin-top: 80px;
+    margin-top: 80px;
 }
 
 section h2 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #hero {
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 60px 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 60px 0;
 }
 
 #hero h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 #hero p {
-  font-size: 20px;
-  color: #666;
+    font-size: 20px;
+    color: #666;
 }
 
 #services ul {
-  list-style: none;
+    list-style: none;
 }
 
 #services ul li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #value-proposition {
-  text-align: center;
-  padding: 60px 0;
+    text-align: center;
+    padding: 60px 0;
 }
 
 #value-proposition h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 #value-proposition p {
-  font-size: 18px;
-  color: #666;
+    font-size: 18px;
+    color: #666;
 }
 
 #testimonials .testimonial {
-  background-color: #f9f9f9;
-  padding: 20px;
-  margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 #testimonials blockquote {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
 }
 
 #testimonials cite {
-  font-size: 14px;
-  color: #888;
+    font-size: 14px;
+    color: #888;
 }
 
 #contact {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .contact-text {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #contact .contact-form input,
 #contact .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 #contact .contact-form button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #contact .contact-form button:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
 footer p {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .social-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .social-icons a {
-  color: #fff;
-  margin: 0 5px;
+    color: #fff;
+    margin: 0 5px;
 }
 
 .social-icons a i {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 /* Media Queries for Responsive Design */
 
 @media screen and (max-width: 767px) {
-  header {
-    display: none;
-  }
+    header {
+        display: none;
+    }
 
-  section {
-    margin-top: 60px;
-  }
+    section {
+        margin-top: 60px;
+    }
 
-  #hero {
-    padding: 40px 0;
-  }
+    #hero {
+        padding: 40px 0;
+    }
 
-  #hero h1 {
-    font-size: 30px;
-  }
+    #hero h1 {
+        font-size: 30px;
+    }
 
-  #hero p {
-    font-size: 18px;
-  }
+    #hero p {
+        font-size: 18px;
+    }
 
-  #value-proposition h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
+    #value-proposition h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
 
-  #value-proposition p {
-    font-size: 16px;
-  }
+    #value-proposition p {
+        font-size: 16px;
+    }
 
-  #testimonials blockquote {
-    font-size: 16px;
-  }
+    #testimonials blockquote {
+        font-size: 16px;
+    }
 
-  #testimonials cite {
-    font-size: 12px;
-  }
+    #testimonials cite {
+        font-size: 12px;
+    }
 
-  #contact .contact-form input,
-  #contact .contact-form textarea {
-    font-size: 14px;
-  }
+    #contact .contact-form input,
+    #contact .contact-form textarea {
+        font-size: 14px;
+    }
 }
 
 /* Menu button */
 .menu-toggle {
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* Navigation menu */
 #menu {
-  display: none;
+    display: none;
 }
 
 #menu.active {
-  display: block;
+    display: block;
 }
-
-#menu ul {
-  list-style: none;
-  text-align: center;
-  margin-top: 10px;
-}
-
-#menu ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-#menu ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s;
-}
-
-#menu ul li a:hover {
-  color: #999;
-}
-
