@@ -111,12 +111,13 @@ section h2 {
 }
 
 #contact {
-  margin-bottom: 40px; /* Add margin-bottom for spacing */
+  margin-bottom: 40px;
 }
 
 .contact-text {
-  margin-bottom: 10px; 
+  margin-bottom: 20px;
 }
+
 #contact .contact-form input,
 #contact .contact-form textarea {
   width: 100%;
@@ -143,3 +144,46 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 767px) {
+  header {
+    padding: 5px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+  }
+
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  #value-proposition h2 {
+    font-size: 24px;
+  }
+
+  #value-proposition p {
+    font-size: 16px;
+  }
+
+  #testimonials blockquote {
+    font-size: 16px;
+  }
+
+  #testimonials cite {
+    font-size: 12px;
+  }
+}
+
+/* Add more media queries as needed for different screen sizes */
+
