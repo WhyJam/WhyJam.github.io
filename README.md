@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+     <header>
         <div class="container">
             <div class="menu-toggle" id="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -21,10 +21,15 @@
             <nav id="menu">
                 <ul>
                     <li><a href="#hero">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#value-proposition">Why Choose Us</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#services">Was wir bieten</a></li>
+                    <li><a href="#value-proposition">Warum wir?</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#our-lawyers">Unsere Anwälte</a></li>
+                    <li><a href="#testimonials">Kundenzitate</a></li>
                 </ul>
             </nav>
         </div>
@@ -56,12 +61,43 @@
         </div>
     </section>
 
+    <section id="our-lawyers">
+        <div class="container">
+            <h2>Our Lawyers</h2>
+            <div class="lawyer">
+                <img src="placeholder_image.jpg" alt="Lawyer Image">
+                <h3 class="lawyer-name">Lawyer Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="lawyer">
+                <img src="placeholder_image.jpg" alt="Lawyer Image">
+                <h3 class="lawyer-name">Lawyer Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="lawyer">
+                <img src="placeholder_image.jpg" alt="Lawyer Image">
+                <h3 class="lawyer-name">Lawyer Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="lawyer">
+                <img src="placeholder_image.jpg" alt="Lawyer Image">
+                <h3 class="lawyer-name">Lawyer Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="lawyer">
+                <img src="placeholder_image.jpg" alt="Lawyer Image">
+                <h3 class="lawyer-name">Lawyer Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+
     <section id="testimonials">
         <div class="container">
             <h2>Testimonials</h2>
             <div class="testimonial">
-                <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nunc eget mauris efficitur
-                    tempus."</blockquote>
+                <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nunc eget mauris efficitur tempus."</blockquote>
                 <cite>- John Doe</cite>
             </div>
         </div>
@@ -87,7 +123,6 @@
     <footer>
         <div class="container">
             <p>&copy; 2023 WhyJam? All rights reserved.</p>
-            <br>
             <div class="social-icons">
                 <a href="https://youtube.com/@WhY_JaM"><i class="fab fa-youtube"></i></a>
                 <a href="https://twitter.com/WhyJam_KKSt?t=8Q-CvyWfuRxqwYEjH0VCBw&s=09"><i class="fab fa-twitter"></i></a>
@@ -107,4 +142,6 @@
             menu.classList.toggle('active');
         });
     </script>
-</body></html>
+</body>
+
+</html>
