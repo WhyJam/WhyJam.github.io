@@ -14,10 +14,10 @@
       <h1>WhyJam Law Firm</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -27,7 +27,6 @@
     <div class="container">
       <h1>Welcome to WhyJam Law Firm</h1>
       <p>Providing legal solutions tailored to your needs</p>
-      <a class="btn" href="#">Get Started</a>
     </div>
   </section>
 
