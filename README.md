@@ -61,19 +61,22 @@
   </section>
 
   <section id="contact">
-    <div class="container">
-      <h2>Contact and Inquiry</h2>
+  <div class="container">
+    <h2>Contact and Inquiry</h2>
+    <div class="contact-text">
       <p>We would love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
-      <div class="contact-form">
-        <form>
-          <input type="text" placeholder="Your Name">
-          <input type="email" placeholder="Your Email">
-          <textarea placeholder="Your Message"></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
     </div>
-  </section>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
 
   <footer>
     <div class="container">
