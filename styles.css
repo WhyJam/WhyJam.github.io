@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+  width: 90%;
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
@@ -163,20 +164,24 @@ footer {
     margin: 10px;
   }
 
+  section {
+    margin-top: 60px;
+  }
+
+  #hero {
+    padding: 40px 0;
+  }
+
   #hero h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   #hero p {
-    font-size: 16px;
-  }
-
-  #services h2 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   #value-proposition h2 {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 15px;
   }
 
