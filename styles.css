@@ -147,7 +147,7 @@ footer {
 
 /* Media Queries for Responsive Design */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   header {
     padding: 5px;
   }
@@ -156,20 +156,32 @@ footer {
     font-size: 24px;
   }
 
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   nav ul li {
-    margin-left: 15px; /* Increased spacing between nav items */
+    margin: 10px 15px;
   }
 
   #hero h1 {
-    font-size: 24px;
+    font-size: 28px;
+    margin-bottom: 10px;
   }
 
   #hero p {
     font-size: 16px;
   }
 
+  #services h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
   #value-proposition h2 {
     font-size: 24px;
+    margin-bottom: 10px;
   }
 
   #value-proposition p {
@@ -183,7 +195,11 @@ footer {
   #testimonials cite {
     font-size: 12px;
   }
+
+  #contact .contact-form input,
+  #contact .contact-form textarea {
+    font-size: 14px;
+  }
 }
 
 /* Add more media queries as needed for different screen sizes */
-
