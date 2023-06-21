@@ -6,4 +6,11 @@
         menu.classList.toggle('active');
     });
 
+    const navLinks = document.querySelectorAll('#menu a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+    });
 </script>
