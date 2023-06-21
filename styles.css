@@ -18,10 +18,8 @@ header {
   background-color: #333;
   color: #fff;
   padding: 10px;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
   z-index: 999;
   transition: top 0.5s;
 }
@@ -167,7 +165,7 @@ footer {
 
   #hero h1 {
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   #hero p {
@@ -175,13 +173,12 @@ footer {
   }
 
   #services h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 22px;
   }
 
   #value-proposition h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 15px;
   }
 
   #value-proposition p {
