@@ -160,12 +160,11 @@ footer {
   }
 
   nav ul li {
-    margin: 10px 15px;
+    margin: 10px;
   }
 
   #hero h1 {
     font-size: 28px;
-    margin-bottom: 15px;
   }
 
   #hero p {
@@ -198,5 +197,3 @@ footer {
     font-size: 14px;
   }
 }
-
-/* Add more media queries as needed for different screen sizes */
