@@ -14,7 +14,7 @@
 <body>
     <header id="header">
         <div class="container">
-            <h1>WhyJam Law V.0.3.37</h1>
+            <h1>WhyJam Law Firm</h1>
             <div id="menu-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
