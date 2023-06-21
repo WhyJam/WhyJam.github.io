@@ -167,36 +167,7 @@ footer p {
 
 @media screen and (max-width: 767px) {
   header {
-    padding: 5px;
-  }
-
-  header h1 {
-    font-size: 24px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  nav ul li {
-    margin: 10px;
-  }
-
-  nav.active ul {
-    display: block;
-  }
-
-  nav ul li a {
-    display: block;
-  }
-
-  #menu-toggle {
-    display: block;
-  }
-
-  #menu-toggle.active {
-    background-color: #333;
+    display: none;
   }
 
   section {
@@ -236,4 +207,91 @@ footer p {
   #contact .contact-form textarea {
     font-size: 14px;
   }
+}
+
+/* Add your existing CSS styles here */
+
+/* Add CSS for the mobile navigation menu */
+#menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+}
+
+#menu ul li {
+    margin-left: 20px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 767px) {
+    #menu {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #menu-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        transition: background-color 0.3s;
+    }
+
+    /* Add CSS for the mobile navigation menu when toggled */
+    #menu-toggle.active .bar {
+        background-color: #333;
+    }
+
+    #menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Adjust the position of the navigation menu when toggled */
+    #header #menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #header #menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header #menu ul li {
+        margin-bottom: 15px;
+    }
 }
