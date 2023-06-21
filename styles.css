@@ -160,7 +160,7 @@ footer p {
 
 @media screen and (max-width: 767px) {
     header {
-        display: none;
+        display: block;
     }
 
     section {
@@ -217,4 +217,3 @@ footer p {
 #menu.active {
     display: block;
 }
-
