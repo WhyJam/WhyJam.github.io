@@ -21,14 +21,20 @@
             <nav id="menu">
                 <ul>
                     <li><a href="#hero">Home</a></li>
+                </ul>
+                <ul>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
                 <ul>
                     <li><a href="#services">Was wir bieten</a></li>
+                </ul>
+                <ul>
                     <li><a href="#value-proposition">Warum wir?</a></li>
                 </ul>
                 <ul>
                     <li><a href="#our-lawyers">Unsere Anwälte</a></li>
+                </ul>
+                <ul>
                     <li><a href="#testimonials">Kundenzitate</a></li>
                 </ul>
             </nav>
