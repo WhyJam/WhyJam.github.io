@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <nav>
+            <nav id="menu">
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#services">Services</a></li>
@@ -84,7 +85,6 @@
         </div>
     </section>
 
-
     <footer>
         <div class="container">
             <p>&copy; 2023 WhyJam? All rights reserved.</p>
@@ -101,17 +101,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var menuToggle = document.getElementById("menu-toggle");
-            var nav = document.querySelector("nav");
-
-            menuToggle.addEventListener("click", function() {
-                nav.classList.toggle("active");
-                menuToggle.classList.toggle("active");
-            });
-        });
-    </script>
 </body>
 
 </html>
