@@ -12,18 +12,16 @@
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <div class="container">
-            <h1>WhyJam Law Firm</h1>
-            <div id="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
             <nav id="menu">
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#value-proposition">Why Choose Us</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -100,7 +98,12 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
 
-</html>
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body></html>
