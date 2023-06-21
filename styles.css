@@ -147,7 +147,7 @@ footer {
 
 /* Media Queries for Responsive Design */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   header {
     padding: 5px;
   }
@@ -157,7 +157,7 @@ footer {
   }
 
   nav ul li {
-    margin-left: 10px;
+    margin-left: 15px; /* Increased spacing between nav items */
   }
 
   #hero h1 {
