@@ -43,7 +43,7 @@
 
     <section id="hero">
         <div class="container">
-            <h1>Willkommen bei WhyJam!</h1>
+            <h1>Anwaltskanzlei WhyJam</h1>
             <p>Starke Vertretung. Klare Lösung</p>
         </div>
     </section>
