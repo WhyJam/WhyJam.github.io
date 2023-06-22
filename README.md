@@ -43,8 +43,8 @@
 
     <section id="hero">
         <div class="container">
-            <h1>Welcome to WhyJam Law Firm</h1>
-            <p>Providing legal solutions tailored to your needs</p>
+            <h1>Willkommen bei WhyJam!</h1>
+            <p>Starke Vertretung. Klare Lösung</p>
         </div>
     </section>
 
