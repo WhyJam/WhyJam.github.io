@@ -26,10 +26,10 @@
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#services">Was wir bieten</a></li>
+                    <li><a href="#services">Was Wir Bieten</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#value-proposition">Warum wir?</a></li>
+                    <li><a href="#value-proposition">Warum Wir?</a></li>
                 </ul>
                 <ul>
                     <li><a href="#our-lawyers">Unsere Anwälte</a></li>
@@ -50,7 +50,7 @@
 
     <section id="services">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2>Unsere Dienstleistungen</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nunc eget mauris efficitur tempus.</p>
             <ul>
                 <li>Service 1</li>
@@ -62,37 +62,37 @@
 
     <section id="value-proposition">
         <div class="container">
-            <h2>Why Choose Us?</h2>
+            <h2>Warum Wir?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nunc eget mauris efficitur tempus.</p>
         </div>
     </section>
 
     <section id="our-lawyers">
         <div class="container">
-            <h2>Our Lawyers</h2>
+            <h2>Unsere Anwälte</h2>
             <div class="lawyer">
                 <img src="placeholder_image.jpg" alt="Lawyer Image">
-                <h3 class="lawyer-name">Lawyer Name</h3>
+                <h3 class="lawyer-name">Anwalt 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="lawyer">
                 <img src="placeholder_image.jpg" alt="Lawyer Image">
-                <h3 class="lawyer-name">Lawyer Name</h3>
+                <h3 class="lawyer-name">Anwalt 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="lawyer">
                 <img src="placeholder_image.jpg" alt="Lawyer Image">
-                <h3 class="lawyer-name">Lawyer Name</h3>
+                <h3 class="lawyer-name">Anwalt 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="lawyer">
                 <img src="placeholder_image.jpg" alt="Lawyer Image">
-                <h3 class="lawyer-name">Lawyer Name</h3>
+                <h3 class="lawyer-name">Anwalt 4</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="lawyer">
                 <img src="placeholder_image.jpg" alt="Lawyer Image">
-                <h3 class="lawyer-name">Lawyer Name</h3>
+                <h3 class="lawyer-name">Anwalt 5</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
@@ -101,7 +101,7 @@
 
     <section id="testimonials">
         <div class="container">
-            <h2>Testimonials</h2>
+            <h2>Kundenzitate</h2>
             <div class="testimonial">
                 <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nunc eget mauris efficitur tempus."</blockquote>
                 <cite>- John Doe</cite>
@@ -111,15 +111,15 @@
 
     <section id="contact">
         <div class="container">
-            <h2>Contact and Inquiry</h2>
+            <h2>Kontakt</h2>
             <div class="contact-text">
-                <p>We would love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+                <p>Wir freuen uns von dir zu hören! Fülle das Formular unten aus und iwr werden uns so schnell wie möglich bei dir melden.</p>
             </div>
             <div class="contact-form">
                 <form>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea placeholder="Your Message"></textarea>
+                    <input type="text" placeholder="Vor- und Nachname">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Anliegen"></textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
