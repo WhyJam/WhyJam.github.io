@@ -1,8 +1,6 @@
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 const menuItems = menu.getElementsByTagName('a');
-const navBarHeight = menu.offsetHeight;
-const offsetValue = 30; // Adjust this value as needed
 
 menuToggle.addEventListener('click', () => {
     menu.classList.toggle('active');
@@ -14,7 +12,7 @@ for (let i = 0; i < menuItems.length; i++) {
         event.preventDefault();
         const targetId = menuItems[i].getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
-        const targetPosition = targetSection.offsetTop - navBarHeight - 30;
+        const targetPosition = targetSection.offsetTop - 300;
 
         window.scrollTo({
             top: targetPosition,
