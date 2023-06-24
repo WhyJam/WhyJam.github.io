@@ -9,36 +9,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-z0XNJfVo6JQXbpXdRMUGONWJChcwLtnXhV6yPLoJ0JdKLY2e+6Zw6MKskwLQn95aqlkxyJ0+gnqYPAP8xzA0hA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
-     <header>
-    <div class="container">
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
+    <header>
+        <div class="container">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li>
+                        <a href="#contact">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="#services">Was wir bieten</a>
+                    </li>
+                    <li>
+                        <a href="#value-proposition">Warum wir?</a>
+                    </li>
+                    <li>
+                        <a href="#our-lawyers">Unsere Anwälte</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials">Kundenzitate</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav id="menu">
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <ul></ul>
-                <li><a href="#contact">Kontakt</a></li>
-                <ul></ul>
-                <li><a href="#services">Was wir bieten</a></li>
-                <ul></ul>
-                <li><a href="#value-proposition">Warum wir?</a></li>
-                <ul></ul>
-                <li><a href="#our-lawyers">Unsere Anwälte</a></li>
-                <ul></ul>
-                <li><a href="#testimonials">Kundenzitate</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </header>
 
     <section id="hero">
         <div class="container">
-            <h1>Willkommen zu WhyJam V. 0.4.0!</h1>
+            <h1>Welcome to WhyJam Law Firm</h1>
             <p>Providing legal solutions tailored to your needs</p>
         </div>
     </section>
@@ -135,14 +139,7 @@
         </div>
     </footer>
 
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
-
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
