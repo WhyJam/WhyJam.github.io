@@ -44,6 +44,10 @@ section h2 {
     margin-bottom: 10px;
 }
 
+p {
+    margin-bottom: 10px;
+}
+
 #hero {
     background-color: #f2f2f2;
     text-align: center;
@@ -165,6 +169,19 @@ footer p {
 
 .social-icons a i {
     font-size: 18px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.centerp {
+    text-align: center;
 }
 
 /* Media Queries for Responsive Design */
