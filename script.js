@@ -48,5 +48,5 @@ window.addEventListener('load', () => {
 
   setTimeout(() => {
     loadingScreen.classList.add('hidden');
-  }, 2000);
+  }, 1500);
 });
