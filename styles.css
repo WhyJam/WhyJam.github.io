@@ -408,12 +408,12 @@ nav ul li {
     }    
     
     #logo {
-        margin-left: 50px;
+        width: 100px;
     }
     
     .loading-text {
-        margin-top: 300px;
-        text-align: center;
-        font-size: 30px;
+        margin-left: -130px;
+        margin-top: 150px;
+        font-size: 14px;
     }
 }
