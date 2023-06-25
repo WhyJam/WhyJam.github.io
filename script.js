@@ -6,7 +6,7 @@ menuToggle.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
 
-// Smooth scroll to the section with offset
+// Smooth scroll
 for (let i = 0; i < menuItems.length; i++) {
     menuItems[i].addEventListener('click', (event) => {
         event.preventDefault();
@@ -22,3 +22,31 @@ for (let i = 0; i < menuItems.length; i++) {
         menu.classList.remove('active');
     });
 }
+
+const sections = document.querySelectorAll('.section-reveal');
+
+const revealSection = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal');
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+});
+
+sections.forEach((section) => {
+  sectionObserver.observe(section);
+});
+
+window.addEventListener('load', () => {
+  const loadingScreen = document.getElementById('loading-screen');
+
+  setTimeout(() => {
+    loadingScreen.classList.add('hidden');
+  }, 2000);
+});
