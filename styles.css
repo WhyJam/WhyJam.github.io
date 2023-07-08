@@ -178,9 +178,8 @@ footer p {
 
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin: 0 auto;
+    width: 80%;
     margin-top: 40px;
     margin-bottom: 10px;
 }
@@ -310,17 +309,15 @@ nav ul li {
 /* loading screen */
 
 #loading-screen {
-    display: block;
-    position: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
     z-index: 9999;
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -329,13 +326,6 @@ nav ul li {
 #loading-screen.hidden {
     opacity: 0;
     pointer-events: none;
-}
-
-.loading-text {
-    margin-left: -250px;
-    margin-top: 300px;
-    text-align: center;
-    font-size: 30px;
 }
 
 /* Media Queries for Responsive Design */
@@ -385,9 +375,8 @@ nav ul li {
 
     .center {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+        margin: 0 auto;
+        width: 80%;
         margin-top: 40px;
         margin-bottom: 10px;
     }
@@ -409,11 +398,5 @@ nav ul li {
     
     #logo {
         width: 100px;
-    }
-    
-    .loading-text {
-        margin-left: -140px;
-        margin-top: 240px;
-        font-size: 18px;
     }
 }
