@@ -50,3 +50,30 @@ window.addEventListener('load', () => {
     loadingScreen.classList.add('hidden');
   }, 1500);
 });
+
+// Get the lawyers carousel container
+const lawyersCarousel = document.querySelector('.lawyers-carousel');
+
+// Get the individual lawyer elements
+const lawyerItems = lawyersCarousel.getElementsByClassName('lawyer');
+
+// Set the index to keep track of the currently displayed lawyer
+let currentLawyerIndex = 0;
+
+// Function to show the next lawyer and hide the current one
+const showNextLawyer = () => {
+    // Hide the current displayed lawyer
+    lawyerItems[currentLawyerIndex].classList.remove('show');
+
+    // Move to the next lawyer index
+    currentLawyerIndex = (currentLawyerIndex + 1) % lawyerItems.length;
+
+    // Show the next lawyer
+    lawyerItems[currentLawyerIndex].classList.add('show');
+};
+
+// Initial display of the first lawyer
+lawyerItems[currentLawyerIndex].classList.add('show');
+
+// Set an interval to switch to the next lawyer periodically
+setInterval(showNextLawyer, 2500); // Adjust the interval duration as needed
