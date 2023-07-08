@@ -309,8 +309,8 @@ nav ul li {
 /* loading screen */
 
 #loading-screen {
-    margin-top: auto;
     display: flex;
+    margin-top: auto;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -328,6 +328,23 @@ nav ul li {
     opacity: 0;
     pointer-events: none;
 }
+
+.lawyers-carousel .lawyer {
+    display: none;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lawyers-carousel .lawyer.show {
+    display: block;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 
 /* Media Queries for Responsive Design */
 
