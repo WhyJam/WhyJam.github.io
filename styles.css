@@ -309,6 +309,7 @@ nav ul li {
 /* loading screen */
 
 #loading-screen {
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
