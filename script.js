@@ -140,3 +140,10 @@ for (let i = 0; i < lawyerItems.length; i++) {
         carouselTimer = setInterval(showNextLawyer, 2500);
     });
 }
+
+for (let i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener('click', () => {
+        menu.classList.remove('active');
+        menuToggle.classList.remove('open');
+    });
+}
