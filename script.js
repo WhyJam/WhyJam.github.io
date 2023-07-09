@@ -4,6 +4,7 @@ const menuItems = menu.getElementsByTagName('a');
 
 menuToggle.addEventListener('click', () => {
     menu.classList.toggle('active');
+    menuToggle.classList.toggle('open');
 });
 
 // Smooth scroll
@@ -51,29 +52,91 @@ window.addEventListener('load', () => {
   }, 1500);
 });
 
-// Get the lawyers carousel container
+const form = document.querySelector('form');
+
+form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    // Get the form input values
+    const email = form.elements.email.value;
+    const phoneNumber = form.elements.phonenumber.value;
+    const message = form.elements.message.value;
+
+    // Create the form data object
+    const formData = new FormData();
+    formData.append('email', email);
+    formData.append('phonenumber', phoneNumber);
+    formData.append('message', message);
+
+    // Send the form data to Formspree using fetch
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            headers: {
+                Accept: 'application/json'
+            },
+            body: formData
+        });
+
+        // Check if the form submission was successful
+        if (response.ok) {
+            // Reset the form fields
+            form.reset();
+            alert('Nachricht wurde erfolgreich gesendet!');
+        } else {
+            // Handle form submission error
+            throw new Error('Form submission failed.');
+        }
+    } catch (error) {
+        // Handle fetch error
+        console.error(error);
+        alert('Form submission failed. Please try again later.');
+    }
+});
+
 const lawyersCarousel = document.querySelector('.lawyers-carousel');
-
-// Get the individual lawyer elements
 const lawyerItems = lawyersCarousel.getElementsByClassName('lawyer');
-
-// Set the index to keep track of the currently displayed lawyer
 let currentLawyerIndex = 0;
+let carouselTimer;
 
-// Function to show the next lawyer and hide the current one
 const showNextLawyer = () => {
-    // Hide the current displayed lawyer
     lawyerItems[currentLawyerIndex].classList.remove('show');
+    lawyerItems[currentLawyerIndex].style.opacity = '0';
+    lawyerItems[currentLawyerIndex].style.transform = 'scale(0.9)';
 
-    // Move to the next lawyer index
     currentLawyerIndex = (currentLawyerIndex + 1) % lawyerItems.length;
 
-    // Show the next lawyer
     lawyerItems[currentLawyerIndex].classList.add('show');
+    lawyerItems[currentLawyerIndex].style.opacity = '1';
+    lawyerItems[currentLawyerIndex].style.transform = 'scale(1)';
 };
 
-// Initial display of the first lawyer
+// Add transition style to the initial lawyer item
 lawyerItems[currentLawyerIndex].classList.add('show');
+lawyerItems[currentLawyerIndex].style.opacity = '1';
+lawyerItems[currentLawyerIndex].style.transform = 'scale(1)';
 
-// Set an interval to switch to the next lawyer periodically
-setInterval(showNextLawyer, 2500); // Adjust the interval duration as needed
+// Start the carousel timer
+carouselTimer = setInterval(showNextLawyer, 2500);
+
+// Pause the carousel timer on mouse enter
+lawyersCarousel.addEventListener('mouseenter', () => {
+    clearInterval(carouselTimer);
+});
+
+// Resume the carousel timer on mouse leave
+lawyersCarousel.addEventListener('mouseleave', () => {
+    carouselTimer = setInterval(showNextLawyer, 2500);
+});
+
+// Increase size on mouse enter and pause the carousel timer
+for (let i = 0; i < lawyerItems.length; i++) {
+    lawyerItems[i].addEventListener('mouseenter', () => {
+        lawyerItems[i].style.transform = 'scale(1.1)';
+        clearInterval(carouselTimer);
+    });
+    lawyerItems[i].addEventListener('mouseleave', () => {
+        lawyerItems[i].style.transform = 'scale(1)';
+        carouselTimer = setInterval(showNextLawyer, 2500);
+    });
+}
