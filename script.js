@@ -117,17 +117,7 @@ lawyerItems[currentLawyerIndex].style.opacity = '1';
 lawyerItems[currentLawyerIndex].style.transform = 'scale(1)';
 
 // Start the carousel timer
-carouselTimer = setInterval(showNextLawyer, 2500);
-
-// Pause the carousel timer on mouse enter
-lawyersCarousel.addEventListener('mouseenter', () => {
-    clearInterval(carouselTimer);
-});
-
-// Resume the carousel timer on mouse leave
-lawyersCarousel.addEventListener('mouseleave', () => {
-    carouselTimer = setInterval(showNextLawyer, 2500);
-});
+carouselTimer = setInterval(showNextLawyer, 2200);
 
 // Increase size on mouse enter and pause the carousel timer
 for (let i = 0; i < lawyerItems.length; i++) {
@@ -137,7 +127,7 @@ for (let i = 0; i < lawyerItems.length; i++) {
     });
     lawyerItems[i].addEventListener('mouseleave', () => {
         lawyerItems[i].style.transform = 'scale(1)';
-        carouselTimer = setInterval(showNextLawyer, 2500);
+        carouselTimer = setInterval(showNextLawyer, 2200);
     });
 }
 
