@@ -49,7 +49,7 @@ window.addEventListener('load', () => {
 
   setTimeout(() => {
     loadingScreen.classList.add('hidden');
-  }, 1500);
+  }, 1000);
 });
 
 const form = document.querySelector('form');
