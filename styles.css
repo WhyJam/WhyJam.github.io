@@ -105,6 +105,8 @@ p {
     font-size: 20px;
 }
 
+
+
 #testimonials .testimonial {
     background-color: #f9f9f9;
     padding: 20px;
@@ -179,7 +181,7 @@ footer p {
 .center {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 35%;
     margin-top: 40px;
     margin-bottom: 10px;
 }
